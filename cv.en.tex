@@ -1,0 +1,214 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+
+\documentclass[a4paper]{article}
+
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc} 
+\usepackage[osf]{mathpazo}
+
+\usepackage[danish]{babel} 
+
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% \chead[Curriculum Vitae for Anders Lemke]{Curriculum Vitae for Anders Lemke}
+\cfoot{\thepage\ af \pageref{LastPage}}
+
+\hypersetup{
+  colorlinks,
+  urlcolor = black,
+  pdfauthor={Anders Lemke},
+  pdfkeywords={},
+  pdftitle={Curriculum Vitae},
+  pdfsubject={Curriculum Vitae},
+  pdfpagemode=UseNone
+}
+
+\geometry{textheight=9in, textwidth=6in}
+
+% Customize section headings
+\usepackage{sectsty}
+\sectionfont{\sffamily}
+% \subsectionfont{\rmfamily\mdseries\large}
+% \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+
+% \usepackage{titlesec}
+% \titleformat{\section}{\large\sffamily}{\thesection}{1em}{\hrule}
+
+\newcommand{\keywords}[1]{\small\textbf{Keywords:} \emph{#1}\normalsize} 
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+\setlength\parskip{0.5em}
+
+% Make lists without bullets
+% \renewenvironment{itemize}{
+%   \begin{list}{}
+%     { \setlength{\itemsep}{5pt}
+%       \setlength{\parsep}{0pt}
+%       \setlength{\topsep}{0pt}
+%       \setlength{\leftmargin}{0em} } }{
+%   \end{list}}
+
+% Make a nicer C++
+\def\Cplusplus{C{\raise.5ex\hbox{\footnotesize ++ }}}
+
+\begin{document}
+
+
+{\huge\bf Anders Lemke}
+
+\bigskip
+Mathildevej 24, 3. th. \\
+2000 Frederiksberg \\
+Denmark
+
+\medskip
+
+Mobile: +45 20442127 
+
+\medskip
+
+Email: \href{mailto:mail@anderslemke.dk}{\tt mail@anderslemke.dk} \\
+URL: \href{http://www.anderslemke.dk}{\tt http://www.anderslemke.dk} \\
+Google+: \href{https://profiles.google.com/116409421545259976121}{\tt https://profiles.google.com/116409421545259976121} \\
+GitHub: \href{http://www.github.com/anderslemke}{\tt http://www.github.com/anderslemke} \\
+LinkedIn: \href{http://www.linkedin.com/in/anderslemke}{\tt http://www.linkedin.com/in/anderslemke} \\
+Twitter: \href{http://www.twitter.com/anderslemke}{\tt http://www.twitter.com/anderslemke} 
+
+\section*{Education}
+Civil engineer in informatics, Technical University of Denmark, august 2008.
+
+\section*{Products}
+\subsection*{Syncing Tasks - 2011}
+\keywords{iPhone/iOS app development, Objective-C, Ruby on Rails, Google Web Toolkit (GWT), Unicorn, nginx}
+
+I wanted a task manager that synced to my iPhone like my mail and calendar did (using Google Sync).
+
+\begin{itemize}
+\item Implemented an iPhone application using \emph{Objective-C}.
+\item Implemented a web application using \emph{Ruby on Rails} and \emph{Google Web Toolkit}.
+\item Configured a server to run the application using \emph{nginx} and \emph{Unicorn}.
+\item Designed and implemented the marketing site at \href{http://www.syncingtasks.com}{www.syncingtasks.com}.
+\end{itemize}
+
+You can read more about Syncing Tasks at \href{http://www.syncingtasks.com}{www.syncingtasks.com}.
+
+\section*{Experience}
+
+\subsection*{Senior Developer - Issuu - 2012}
+\keywords{Javascript, Ruby on Rails, node.js, SASS, Grunt}
+
+Lead developer on \href{http://www.magmahq.com}{Magma} which is written in Ruby on Rails.
+
+Works on issuu.com frontend, where I'm responsinble for certain areas.
+
+\subsection*{autobutler.dk - 2011-2012}
+\keywords{Project management, Ruby on Rails, Heroku}
+
+In order to keep their product evolving Autobutler hired me to take care of the development.
+
+\begin{itemize}
+	\item General analysis, design and implementation in \emph{Ruby on Rails}.
+\end{itemize}
+
+\subsection*{Benjamin Media - 2009-2010}
+
+\keywords{FreeBSD, Ruby on Rails, Capistrano, Unicorn, PostgreSQL, server architecture, creditcard payment, security}
+
+At Benjamin Media, besides implementing features on our applications, my responsibility was to make our applications scale and keep them running smoothly.
+
+\begin{itemize}
+	\item Analyzed our application, pinpointed and solved bottlenecks.
+	\item Did a major restructuring of our servers switching from Mongrel to Unicorn.
+	\item Implemented credit card payment on our subscription signups.
+\end{itemize}
+
+\subsection*{Gigahost ApS - 2008}
+
+\keywords{Linux, PHP, webudvikling, Apache, MySQL, serveradministration, selvstændigt, Mogile FS}
+
+\begin{itemize}
+	\item Configured the distributed file system Mogile FS to be used for images on speek.dk among other things.
+	\item Implemented a domain renewal system for Gigahost customers to use to manage their domains.
+	\item Configured PowerDNS and an administration system around it.
+\end{itemize}
+
+\section*{Other projects}
+
+\subsection*{hurtigfaktura.dk - 2008}
+\keywords{Ruby on Rails, HAML, \LaTeX}
+
+I needed a quick and easy way to generate an invoice, so I created hurtigfaktura.dk to do just that.
+
+\begin{itemize}
+	\item Implemented a small application in Ruby on Rails running on hurtigfaktura.dk.
+	\item Setup \LaTeX on a Linux server to generate the invoices.
+\end{itemize}
+
+\subsection*{Image archive for Personalestyrelsen - 2007} 
+\keywords{Ajax, Java, GUI}
+Personalestyrelsen needed a system to keep track of images bought for publications.
+
+\begin{itemize}
+	\item Implemented an application using ASP as backend and Google Web Toolkit as frontend.
+\end{itemize}
+
+\section*{Competencies}
+
+\begin{itemize}
+\item \textbf{Languages}: Ruby, Objective-C, JavaScript.
+\item \textbf{OS}: Mac OS X, Linux, Unix.
+\item \textbf{Databases}: MySQL, SQLite, MSSQL, MongoDB.
+\item \textbf{Other}: Ruby on Rails, testing, \LaTeX, configuration of Apache, DNS, HTML, CSS, RSpec, Subversion, Git.
+\end{itemize}
+
+
+\section*{I love}
+
+\begin{itemize}
+  \item \textbf{Software development}, being \emph{my} tool to make the world a better place.
+  \item \textbf{Beautiful, simple and user friendly design}, being the way to make the world an easier and more aestheticly  pleasing place to be.
+  \item \textbf{Ruby on Rails}, being a simple framework, that allows me to create good products easily.
+  \item \textbf{Innovation}, being the process of identifying needs and proposing creative solutions.
+\end{itemize}
+
+
+\section*{Personal}
+Born december 12th, 1980.
+
+I \textbf{am} positive, calm, ambitious, engaged.
+
+I \textbf{love} quality, simplicity, transparency, innovation, good design.
+
+\section*{Personal interests} 
+
+Music, sport (running, swimming, mountainbiking), philosphy, travelling.
+
+
+\bigskip
+
+% Footer
+\begin{center}
+\begin{footnotesize}
+Last updated: \today \\
+\href{http://files.anderslemke.dk/cv.en.pdf}{\tt http://files.anderslemke.dk/cv.en.pdf}
+\end{footnotesize}
+\end{center}
+\end{document}

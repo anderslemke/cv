@@ -1,0 +1,5 @@
+#! /bin/bash
+
+./compile
+./compile
+./send-to-server

@@ -1,0 +1,207 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2008 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+
+\documentclass[a4paper]{article}
+
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc} 
+\usepackage[osf]{mathpazo}
+
+\usepackage[danish]{babel} 
+
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% \chead[Curriculum Vitae for Anders Lemke]{Curriculum Vitae for Anders Lemke}
+\cfoot{\thepage\ af \pageref{LastPage}}
+
+\hypersetup{
+  colorlinks,
+  urlcolor = black,
+  pdfauthor={Anders Lemke},
+  pdfkeywords={},
+  pdftitle={Curriculum Vitae},
+  pdfsubject={Curriculum Vitae},
+  pdfpagemode=UseNone
+}
+
+\geometry{textheight=9in, textwidth=6in}
+
+% Customize section headings
+\usepackage{sectsty}
+\sectionfont{\sffamily}
+% \subsectionfont{\rmfamily\mdseries\large}
+% \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+
+
+\newcommand{\keywords}[1]{\small\textbf{Nøgleord:} \emph{#1}\normalsize} 
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+\setlength\parskip{0.5em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}
+    { \setlength{\itemsep}{5pt}
+      \setlength{\parsep}{0pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\leftmargin}{0em} } }{
+  \end{list}}
+
+% Make a nicer C++
+\def\Cplusplus{C{\raise.5ex\hbox{\footnotesize ++ }}}
+
+\begin{document}
+
+
+{\huge\bf Anders Lemke}
+
+\bigskip
+Mathildevej 24, 3. th. \\
+2000 Frederiksberg
+
+\medskip
+
+Telefon: 20 44 21 27 
+
+\medskip
+
+Email: \href{mailto:mail@anderslemke.dk}{\tt mail@anderslemke.dk} \\
+URL: \href{http://www.anderslemke.dk/}{\tt http://www.anderslemke.dk/}
+
+\section*{Uddannelse}
+
+Civilingeniør, cand.polyt, Informatik, Danmarks Tekniske Universitet, august 2008.
+
+\section*{Produkter}
+
+\subsection*{Syncing Tasks - 2011}
+\keywords{iPhone/iOS app udvikling, Objective-C, Ruby on Rails, Google Web Toolkit (GWT), Unicorn, nginx}
+
+Syncing Tasks er en task manager som man kan bruge på iPhone og på web. 
+
+Syncing Tasks på web er lavet i Ruby on Rails og GWT, og kører på en Linux server sat op med nginx og Unicorn.
+
+Syncing Tasks på iPhone er skrevet i Objective-C og er tilgængelig i App Store.
+
+Desuden har jeg selv stået for al design og markedsføring.
+
+Læs mere om Syncing Tasks her: \href{http://www.syncingtasks.com}{www.syncingtasks.com}
+
+\section*{Nuværende ansættelse}
+
+\subsection*{Senior Developer - Issuu - 2012}
+\keywords{Javascript, Ruby on Rails, node.js, SASS, Grunt}
+
+Lead developer på \href{http://www.magmahq.com}{Magma} som er skrevet i Ruby on Rails.
+
+Arbejder desuden på Issuu's frontend, hvor jeg har ansvar for udvalgte dele.
+
+\section*{Tidligere ansættelser}
+
+\subsection*{autobutler.dk - 2011-2012}
+\keywords{Projektstyring, Ruby on Rails, Heroku}
+
+Fungerende CTO med ansvar for videreudvikling og design af både kunderettede systemer samt interne systemer. Har koordineret med diverse freelancere.
+
+Var ansvarlig for at tage applikationen fra prototype til færdigt produkt. Herunder fuld launch i Sverige. 
+
+\subsection*{Benjamin Media - 2009-2010}
+
+\keywords{FreeBSD, Ruby on Rails, Capistrano, Unicorn, PostgreSQL, serverarkitektur, Dankort, sikkerhed}
+
+Hos Benjamin Media stod jeg primært for omstrukturering af serverarkitektur således at deres webbaserede applikationer kørte på en platform som kunne skalere.
+
+Desuden stod jeg for udvikling af betaling for abonnementer med Dankort via web og integrering med moderselskabet Bonnier's abonnementssystem.
+
+\subsection*{Gigahost ApS - 2008}
+
+\keywords{Linux, PHP, webudvikling, Apache, MySQL, serveradministration, selvstændigt, Mogile FS}
+
+Ansat ved Gigahost som civilingeniør på midlertidig basis.
+
+Gigahost sælger webhoteller, primært til private, og benytter open source systemer til tekniske løsninger.
+
+Konkret har jeg bl.a. sat det distribuerede filsystem Mogile FS op, implementeret en ny cron job runner, implementeret et system til automatisk fornyelse af domæner, samt konfigureret nameservere (PowerDNS) og implementeret administrationssystem hertil.
+
+Desuden har jeg løst mindre opgaver relateret til serveradministration og vedligehold, og har fået godt kendskab til domæneadministration og DNS.
+
+
+\section*{Mindre projekter}
+
+\subsection*{hurtigfaktura.dk - 2008}
+\keywords{Ruby on Rails, HAML, \LaTeX}
+
+\texttt{hurtigfaktura.dk} er mit eget personlige projekt, og udspringer af mit eget behov for at kunne udfærdige en faktura.
+
+Det er et lille system udviklet i Ruby on Rails, hvor mindre virksomheder nemt og hurtigt kan udfærdige en professionelt udseende faktura i PDF.
+
+PDF'en genereres ved hjælp af \LaTeX.
+
+Siden kører på en Debian Linux distribution som jeg har konfigureret med bl.a. Apache, Phusion Passenger\texttrademark og \LaTeX.
+
+
+\subsection*{Billedarkiv for Personalestyrelsen - 2007} 
+\keywords{Ajax, Java, GWT}
+
+En webapplikation som bruges internt i Personalestyrelsen til at administrere styrelsens billedmateriale.
+
+Udviklet i ASP og Google Webdeveloper Toolkit (GWT).
+
+\section*{Kompetencer}
+
+\begin{itemize}
+\item Programmeringssprog: Ruby, Objective C, Java, PHP, C\#, C, Perl, VBScript, JavaScript.
+\item Operativsystemer: Mac OS X, Linux, Unix.
+\item Databaser: MySQL, SQLite, MSSQL, MongoDB.
+\item Andet: Ruby on Rails, Angular.js, node.js, Ember.js, \LaTeX, konfiguration af Apache, DNS, HTML, CSS, RSpec, Subversion, Git.
+\end{itemize}
+
+\section*{Faglige interesser}
+
+Datalogi, softwareudvikling, idéudvikling, open source software, Ruby on Rails, Scrum, BDD, TDD.
+
+\section*{Jeg er vild med...}
+
+\begin{itemize}
+  \item \textbf{Software}, som er \emph{mit} middel til at gøre verden et bedre sted.
+  \item \textbf{Ruby on Rails}, som er det framework som hjælper mig hurtigt på vej.
+  \item \textbf{Innovation}, som er processen i at identificere behov og finde på kreative løsninger.
+\end{itemize}
+
+\section*{Personligt}
+Født 12. december 1980.
+
+Glad, positiv, ambitiøs, kvalitetsbevidst, har klare værdier, engageret, elsker simplicitet og gennemskuelighed, innovativ, empatisk, miljøbevidst.
+
+
+\section*{Personlige interesser} 
+
+Musik, motion (cykling, løb, svømning), filosofi, psykologi, cykler, rejser.
+
+\bigskip
+
+% Footer
+\begin{center}
+\begin{footnotesize}
+Sidst opdateret: \today \\
+\href{http://files.anderslemke.dk/cv.pdf}{\tt http://files.anderslemke.dk/cv.pdf}
+\end{footnotesize}
+\end{center}
+\end{document}
