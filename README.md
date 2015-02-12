@@ -1,2 +1,3 @@
 
-[Download CV for Anders Lemke](https://github.com/anderslemke/cv/blob/master/cv.pdf?raw=true)
+[Download dansk CV for Anders Lemke](https://github.com/anderslemke/cv/blob/master/cv.pdf?raw=true)
+[Download english resume for Anders Lemke](https://github.com/anderslemke/cv/blob/master/cv.en.pdf?raw=true)
