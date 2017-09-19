@@ -42,14 +42,18 @@
 
 \geometry{textheight=9in, textwidth=6in}
 
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}
+    { \setlength{\itemsep}{5pt}
+      \setlength{\parsep}{0pt}
+      \setlength{\topsep}{0pt}
+      \setlength{\leftmargin}{0em} } }{
+  \end{list}}
+
 % Customize section headings
 \usepackage{sectsty}
 \sectionfont{\sffamily}
-% \subsectionfont{\rmfamily\mdseries\large}
-% \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
-
-% \usepackage{titlesec}
-% \titleformat{\section}{\large\sffamily}{\thesection}{1em}{\hrule}
 
 \newcommand{\keywords}[1]{\small\textbf{Keywords:} \emph{#1}\normalsize} 
 
@@ -57,20 +61,10 @@
 \setlength\parindent{0em}
 \setlength\parskip{0.5em}
 
-% Make lists without bullets
-% \renewenvironment{itemize}{
-%   \begin{list}{}
-%     { \setlength{\itemsep}{5pt}
-%       \setlength{\parsep}{0pt}
-%       \setlength{\topsep}{0pt}
-%       \setlength{\leftmargin}{0em} } }{
-%   \end{list}}
-
 % Make a nicer C++
 \def\Cplusplus{C{\raise.5ex\hbox{\footnotesize ++ }}}
 
 \begin{document}
-
 
 {\huge\bf Anders Lemke}
 
@@ -87,7 +81,6 @@ Mobile: +45 20442127
 
 Email: \href{mailto:mail@anderslemke.dk}{\tt mail@anderslemke.dk} \\
 URL: \href{http://www.anderslemke.dk}{\tt http://www.anderslemke.dk} \\
-Google+: \href{https://profiles.google.com/116409421545259976121}{\tt https://profiles.google.com/116409421545259976121} \\
 GitHub: \href{http://www.github.com/anderslemke}{\tt http://www.github.com/anderslemke} \\
 LinkedIn: \href{http://www.linkedin.com/in/anderslemke}{\tt http://www.linkedin.com/in/anderslemke} \\
 Twitter: \href{http://www.twitter.com/anderslemke}{\tt http://www.twitter.com/anderslemke} 
@@ -95,9 +88,16 @@ Twitter: \href{http://www.twitter.com/anderslemke}{\tt http://www.twitter.com/an
 \section*{Education}
 Civil engineer in informatics, Technical University of Denmark, august 2008.
 
+\section*{Currently}
+
+\subsection*{Lead developer - Zetland - 2015}
+\keywords{Event Sourcing, CQRS, Ruby on Rails, React, RabbitMQ, React Native}
+
+As the only full-stacker, I have the overall responsibility of everything from the infrastucture and database design over the API and React frontend to the CSS.
+
 \section*{Experience}
 
-\subsection*{Developer - Firmafon - 2013}
+\subsection*{Developer - Firmafon - 2013-2015}
 \keywords{Angular.js, Cordova, Ruby on Rails, Freeswitch, Puppet, RabbitMQ}
 
 One of three developers, with main responsibility for our apps. Both in browser and on mobile.
@@ -167,20 +167,11 @@ I needed a quick and easy way to generate an invoice, so I created hurtigfaktura
 	\item Setup \LaTeX on a Linux server to generate the invoices.
 \end{itemize}
 
-\subsection*{Image archive for Personalestyrelsen - 2007}
-\keywords{Ajax, Java, GUI}
-Personalestyrelsen needed a system to keep track of images bought for publications.
-
-\begin{itemize}
-	\item Implemented an application using ASP as backend and Google Web Toolkit as frontend.
-\end{itemize}
-
 \section*{I love}
 
 \begin{itemize}
   \item \textbf{Software development}, being \emph{my} tool to make the world a better place.
   \item \textbf{Beautiful, simple and user friendly design}, being the way to make the world an easier and more aestheticly  pleasing place to be.
-  \item \textbf{Ruby on Rails}, being a simple framework, that allows me to create good products easily.
   \item \textbf{Innovation}, being the process of identifying needs and proposing creative solutions.
 \end{itemize}
 
@@ -195,7 +186,6 @@ I \textbf{love} quality, simplicity, transparency, innovation, good design.
 \section*{Personal interests} 
 
 Music, sport (running, swimming, mountainbiking), philosphy, travelling.
-
 
 \bigskip
 
