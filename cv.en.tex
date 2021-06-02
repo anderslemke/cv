@@ -27,13 +27,15 @@
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-% \chead[Curriculum Vitae for Anders Lemke]{Curriculum Vitae for Anders Lemke}
-\cfoot{\thepage\ af \pageref{LastPage}}
+% \chead[Curriculum Vitae for Anders Lemke-Holstein]{Curriculum Vitae for Anders Lemke}
+\lfoot{Curriculum Vitae}
+\cfoot{\thepage\ / \pageref{LastPage}}
+\rfoot{Anders Lemke-Holstein}
 
 \hypersetup{
   colorlinks,
   urlcolor = black,
-  pdfauthor={Anders Lemke},
+  pdfauthor={Anders Lemke-Holstein},
   pdfkeywords={},
   pdftitle={Curriculum Vitae},
   pdfsubject={Curriculum Vitae},
@@ -66,7 +68,7 @@
 
 \begin{document}
 
-{\huge\bf Anders Lemke}
+{\huge\bf Anders Lemke-Holstein}
 
 \bigskip
 Præstegårds Allé 50 \\
@@ -79,121 +81,81 @@ Mobile: +45 20442127
 
 \medskip
 
-Email: \href{mailto:mail@anderslemke.dk}{\tt mail@anderslemke.dk} \\
-URL: \href{http://www.anderslemke.dk}{\tt http://www.anderslemke.dk} \\
+Email: \href{mailto:anders@lemke.dk}{\tt anders@lemke.dk} \\
+Website: \href{http://www.anderslemke.dk}{\tt http://www.anderslemke.dk} \\
 GitHub: \href{http://www.github.com/anderslemke}{\tt http://www.github.com/anderslemke} \\
 LinkedIn: \href{http://www.linkedin.com/in/anderslemke}{\tt http://www.linkedin.com/in/anderslemke} \\
 Twitter: \href{http://www.twitter.com/anderslemke}{\tt http://www.twitter.com/anderslemke} 
 
 \section*{Education}
-Civil engineer in informatics, Technical University of Denmark, august 2008.
+Master of Science in Engenineering (cand.polyt), Technical University of Denmark, august 2008.
 
 \section*{Currently}
 
-\subsection*{Lead developer - Zetland - 2015}
-\keywords{Event Sourcing, CQRS, Ruby on Rails, React, RabbitMQ, React Native}
+\subsection*{Platform Architect and Lead Engineer - Zetland - 2015}
+\keywords{Event Sourcing, CQRS, Ruby On Rails, React, RabbitMQ, React Native}
 
-As the only full-stacker, I have the overall responsibility of everything from the infrastucture and database design over the API and React frontend to the CSS.
+Responsible for both architecting, developing, scaling and maintaining the platform used for distribution of the journalism provided. The platform consist of a custom CMS, two native apps (iOS and Android), a web frontend, a server backend and integrations to a number of third parties.
 
-\section*{Experience}
+Vi Media AB bought a license for the platform in 2019 to run \href{https://vi.se}{vi.se}.
+
+\section*{Past}
 
 \subsection*{Developer - Firmafon - 2013-2015}
 \keywords{Angular.js, Cordova, Ruby on Rails, Freeswitch, Puppet, RabbitMQ}
 
-One of three developers, with main responsibility for our apps. Both in browser and on mobile.
-
-Built our internal sales settling tool.
+Was part of the team that developed everything from real-time phone systems, including voicemail, to internal sales team settling tools.
 
 \subsection*{Senior Developer - Issuu - 2012-2013}
 \keywords{Javascript, Ruby on Rails, node.js, SASS, Grunt}
 
-Lead developer on \href{http://www.magmahq.com}{Magma} which is written in Ruby on Rails.
+Lead developer on \href{http://www.magmahq.com}{Magma} which was written in Ruby on Rails.
 
-Works on issuu.com frontend, where I'm responsinble for certain areas.
+Worked on issuu.com frontend in JavaScript, where I was responsible for part of the sign up funnel.
 
-\subsection*{autobutler.dk - 2011-2012}
+\subsection*{CTO - autobutler.dk - 2011-2012}
 \keywords{Project management, Ruby on Rails, Heroku}
 
-In order to keep their product evolving Autobutler hired me to take care of the development.
+Responsible of implementation and operation of the product, and building the delopment team.
 
-\begin{itemize}
-	\item General analysis, design and implementation in \emph{Ruby on Rails}.
-\end{itemize}
-
-\subsection*{Benjamin Media - 2009-2010}
-
+\subsection*{Developer - Benjamin Media - 2009-2010}
 \keywords{FreeBSD, Ruby on Rails, Capistrano, Unicorn, PostgreSQL, server architecture, creditcard payment, security}
 
-At Benjamin Media, besides implementing features on our applications, my responsibility was to make our applications scale and keep them running smoothly.
+At Benjamin Media, besides implementing features on their applications, my responsibility was to make our applications scale in close coorporation with their hosting provider.
 
 \begin{itemize}
-	\item Analyzed our application, pinpointed and solved bottlenecks.
-	\item Did a major restructuring of our servers switching from Mongrel to Unicorn.
-	\item Implemented credit card payment on our subscription signups.
+  \item Analyzed our application, pinpointed and solved bottlenecks.
+  \item Did a major restructuring of our servers switching from Mongrel to Unicorn.
+  \item Implemented credit card payment on our subscription signups.
 \end{itemize}
 
-\subsection*{Gigahost ApS - 2008}
+\subsection*{Developer - Gigahost ApS - 2008}
 
 \keywords{Linux, PHP, webudvikling, Apache, MySQL, serveradministration, selvstændigt, Mogile FS}
 
 \begin{itemize}
-	\item Configured the distributed file system Mogile FS to be used for images on speek.dk among other things.
-	\item Implemented a domain renewal system for Gigahost customers to use to manage their domains.
-	\item Configured PowerDNS and an administration system around it.
+  \item Configured the distributed file system Mogile FS.
+  \item Implemented a domain renewal system for Gigahost customers to use to manage their domains.
+  \item Configured PowerDNS and an administration system around it.
 \end{itemize}
 
-\section*{Other projects}
+\section*{Side projects}
 
-\subsection*{Syncing Tasks - 2011}
-\keywords{iPhone/iOS app development, Objective-C, Ruby on Rails, Google Web Toolkit (GWT), Unicorn, nginx}
-
-I wanted a task manager that synced to my iPhone like my mail and calendar did (using Google Sync).
-
-\begin{itemize}
-\item Implemented an iPhone application using \emph{Objective-C}.
-\item Implemented a web application using \emph{Ruby on Rails} and \emph{Google Web Toolkit}.
-\item Configured a server to run the application using \emph{nginx} and \emph{Unicorn}.
-\item Designed and implemented the marketing site at \href{http://www.syncingtasks.com}{www.syncingtasks.com}.
-\end{itemize}
-
-You can read more about Syncing Tasks at \href{http://www.syncingtasks.com}{www.syncingtasks.com}.
 \subsection*{hurtigfaktura.dk - 2008}
-\keywords{Ruby on Rails, HAML, \LaTeX}
+\keywords{Ruby on Rails, \LaTeX}
 
-I needed a quick and easy way to generate an invoice, so I created hurtigfaktura.dk to do just that.
-
-\begin{itemize}
-	\item Implemented a small application in Ruby on Rails running on hurtigfaktura.dk.
-	\item Setup \LaTeX on a Linux server to generate the invoices.
-\end{itemize}
-
-\section*{I love}
-
-\begin{itemize}
-  \item \textbf{Software development}, being \emph{my} tool to make the world a better place.
-  \item \textbf{Beautiful, simple and user friendly design}, being the way to make the world an easier and more aestheticly  pleasing place to be.
-  \item \textbf{Innovation}, being the process of identifying needs and proposing creative solutions.
-\end{itemize}
-
+A simple online tool to generate an invoice.
 
 \section*{Personal}
 Born december 12th, 1980.
-
-I \textbf{am} positive, calm, ambitious, engaged.
-
-I \textbf{love} quality, simplicity, transparency, innovation, good design.
-
-\section*{Personal interests} 
-
-Music, sport (running, swimming, mountainbiking), philosphy, travelling.
 
 \bigskip
 
 % Footer
 \begin{center}
-\begin{footnotesize}
-Last updated: \today \\
-\href{http://files.anderslemke.dk/cv.en.pdf}{\tt http://files.anderslemke.dk/cv.en.pdf}
-\end{footnotesize}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{http://files.anderslemke.dk/cv.en.pdf}{\tt http://files.anderslemke.dk/cv.en.pdf}
+  \end{footnotesize}
 \end{center}
 \end{document}

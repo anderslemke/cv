@@ -1,3 +1,5 @@
 #! /bin/bash
 pdflatex cv.tex
+pdflatex cv.tex
+pdflatex cv.en.tex
 pdflatex cv.en.tex
