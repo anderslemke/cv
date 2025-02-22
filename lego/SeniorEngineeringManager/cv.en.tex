@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=11pt]{scrartcl} % KOMA-article class
+                            
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{changepage}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+    \textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lfoot{Curriculum Vitae}
+\cfoot{\thepage\ / \pageref{LastPage}}
+\rfoot{Anders Lemke-Holstein}
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{sectsty}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.4em}
+
+\sectionfont{%                        % Change font of \section command
+    \usefont{OT1}{phv}{b}{n}%        % bch-b-n: CharterBT-Bold font
+    \sectionrule{0pt}{0pt}{-5pt}{0.1pt}}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}            % Box to align text
+\newcommand{\sepspace}{\vspace*{1em}}        % Vertical space macro
+
+\renewcommand*\baselinestretch{1.1}\selectfont
+
+\newcommand{\MyName}[1]{ % Name
+  \begin{center}
+    \Huge \usefont{OT1}{phv}{b}{n} #1
+    \par \normalsize \normalfont
+  \end{center}
+  }
+
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+  \begin{center}
+    \large \usefont{OT1}{phv}{m}{n} \textit{#1}
+        \par \normalsize \normalfont
+        \end{center}
+        }
+
+\newcommand{\NewPart}[1]{\section*{#1}}
+
+\newcommand{\PersonalEntry}[2]{
+        \noindent % Indentation
+        \parbox{\spacebox}{        % Box to align text
+        #1}               % Entry name (birth, address, etc.)
+        \hspace{1.5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+        \noindent\hangindent=2em\hangafter=0 % Indentation
+        \parbox{\spacebox}{        % Box to align text
+        \textit{#1}}               % Entry name (birth, address, etc.)
+        \hspace{1.5em} #2 \par}    % Entry value    
+        
+\newcommand{\EducationEntry}[4]{
+        \noindent \textbf{#1} \hfill      % Study
+        \colorbox{Black}{%
+            \parbox{6em}{%
+            \hfill\color{White}#2}} \par  % Duration
+        \noindent \textit{#3} \par        % School
+        \begin{adjustwidth}{2.0em}{3em}
+#4
+        \end{adjustwidth}
+        \sepspace
+        \normalsize \par}
+
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+{\fontfamily{qhv}\selectfont
+
+\MyName{Anders Lemke-Holstein}
+\MySlogan{Human centered software engineer}
+
+%%% Profile
+%%% ------------------------------------------------------------
+\NewPart{Profile}{}
+Hi, I'm Anders. A sotware engineer with a focus on ethics and compassion.
+
+Interacting with software should be a positive experience. Both for users and engineers. At the same time, (most) software has to fulfill a business objective. These two areas of interst are not mutually exclusive. This is why I make an effort to find the balance between business value and human delight when building software.
+
+I'm genuinely motivated by making people around me feel content, safe and welcome.
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Education}{}
+
+\EducationEntry{Master of Science in Engineering (cand.polyt)}{2003-2008}{Technical University of Denmark (DTU)}{Studied Informatics (the combination of computer science and applied mathematics) and had an introductory management course.}
+
+%%% Work experience
+%%% ------------------------------------------------------------
+\NewPart{Experience}{}
+
+\EducationEntry{Platform Architect and Lead Engineer}{2015-present}{Zetland}{
+  Built a platform using modern software engineering best practices in close collaboration with the product team. The platform is used to distribute and consume high quality journalistic content.
+  
+  Acquired deep working knowledge of event-based architectures in a microservice-like environment.
+
+  Worked extensively with frontend technologies like React, Node.js and GraphQL (both server and client).
+
+  Applied concepts from Domain-Driven Design successfully.
+
+  Took part in recruiting, coaching, mentoring and teaching both junior and senior developers.
+}
+
+\EducationEntry{Senior Developer}{2013-2015}{Firmafon}{
+  Got my first experience with distributed real-time event-based systems.
+
+  Experienced the importance of an ubiquitious language and how it influences the business and developer happiness.
+
+  Part of recruiting to the team.
+}
+
+\EducationEntry{Senior Developer}{2012-2013}{Issuu}{
+  Became aware that build tools and operations has a big impact on both developer experience and product velocity.
+}
+
+\EducationEntry{CTO}{2011-2012}{Autobutler}{
+  Gained experience with TDD and realized how important automated tests are both for product quality and programmer happiness.
+
+  First experience with recruiting and leading a team.
+}
+
+\EducationEntry{Developer}{2009-2010}{Benjamin Media}{
+  Experience with scaling and maintaining some of the most visited sites in Denmark. Inluding msn.dk.
+}
+
+\EducationEntry{Developer}{2008}{Gigahost}{
+  Got a deep practical understanding of the internet infrastructure.
+}
+
+\NewPart{Talks}{}
+
+\EducationEntry{Just authentication for the internet}{2020}{PasswordsCon (a track on Internetdagarna)}{
+  An introduction to my utopian side-project, Promise, that proposes how we might solve authentication in a simple yet secure way.
+}
+
+\EducationEntry{The physiological aspects of ambiguity}{2019}{Copenhagen Ruby Brigade}{
+  A talk about what happens in our bodies and brains when we're faced with ambiguity. And it's not pleasant. Being a software developer potentially puts you in a lot of ambigous situations, so I pull in aspect from linguistics to help us understand how to avoid ambiguity in the first place.
+}
+
+\EducationEntry{Applied Event Sourcing, Domain Driven Design and CQRS}{2018}{Copenhagen Ruby Brigade}{
+  A talk where I explain the basics of the concepts of Event Sourcing, some concepts from Domain-Driven Design and CQRS and how they are applied in the platform of Zetland.
+}
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\NewPart{Personal details}{}
+
+\PersonalEntry{Born}{December 12, 1980}
+\PersonalEntry{Address}{Præstegårds Allé 50, 2700 Brønshøj}
+\PersonalEntry{Phone}{+45 20442127}
+\PersonalEntry{Mail}{anders@lemke.dk}
+\PersonalEntry{LinkedIn}{linkedin.com/in/anderslemke}
+\PersonalEntry{GitHub}{github.com/anderslemke}
+\PersonalEntry{Weekends}{Spent with my family and on my bike.}
+
+%%% Personal details
+%%% ------------------------------------------------------------
+% \NewPart{Other}{}
+} % font selection
+\end{document}

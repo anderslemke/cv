@@ -86,18 +86,23 @@ Email: \href{mailto:anders@lemke.dk}{\tt anders@lemke.dk} \\
 Website: \href{https://www.anderslemke.dk}{\tt www.anderslemke.dk} \\
 GitHub: \href{https://www.github.com/anderslemke}{\tt github.com/anderslemke} \\
 LinkedIn: \href{https://www.linkedin.com/in/anderslemke}{\tt linkedin.com/in/anderslemke} \\
+Twitter: \href{https://www.twitter.com/anderslemke}{\tt twitter.com/anderslemke} 
 
 \section*{Education}
 Master of Science in Engineering (cand.polyt), Technical University of Denmark (DTU), august 2008.
 
 \section*{Currently}
 
-\subsection*{Founder at Oase}
-\keywords{Event Sourcing, CQRS, React Native, Elixir, Phoenix Framework}
+\subsection*{Platform Architect and Lead Engineer - Zetland - 2015}
+\keywords{Event Sourcing, CQRS, Ruby On Rails, React, RabbitMQ, React Native, Recruiting}
 
-Oase is a danish startup that is building a platform for communities to communicate and coordinate their work.
+Zetland is a danish media company publishing quality journalism to over 23.000 members on their own digital platform.
 
-Read more about Oase on \href{https://oase.app}{\tt oase.app} \\
+The platform consists of a custom CMS, an API, a React frontend and a React Native app (built for Android and iOS).
+
+My responsibilities includes the architecture, implementation, integration, running and scaling of the platform.
+
+Zetland sold a license to to the platform to Vi Media AB bought in 2019. So they run \href{https://vi.se}{vi.se} on a adapted version of the Zetland platform.
 
 \subsection*{Founder at Promise}
 \keywords{Event Sourcing, CQRS, Ruby on Rails, Security, Encryption}
@@ -106,27 +111,13 @@ Promise is a utopian dream of having a secure and private single sign-on provide
 
 Read more about Promise on \href{https://promiseauthentication.org}{\tt promiseauthentication.org} \\
 
-\subsection*{Board member at Skærmsund Barndom - 2023}
-\keywords{Community building, Public speaking}
+\subsection*{hurtigfaktura.dk - 2008}
+\keywords{Ruby on Rails, \LaTeX}
 
-Skærmsund Barndom is a danish parent-led non-profit organization that fights for a healthier relationship to tech for our kids.
-
-% \subsection*{hurtigfaktura.dk - 2008}
-% \keywords{Ruby on Rails, \LaTeX}
-%
-% hurtigfaktura.dk is a simple online tool that helps small businesses generating invoices that meets all requirements.
+hurtigfaktura.dk is a simple online tool that helps small businesses generating invoices that meets all requirements.
 
 
 \section*{Past}
-
-\subsection*{Platform Architect and Lead Engineer - Zetland - 2015-2023}
-\keywords{Mentoring, Event Sourcing, CQRS, Ruby On Rails, React, RabbitMQ, React Native, Recruiting}
-
-Zetland is a danish media company publishing quality journalism to over 23.000 members on their own digital platform.
-
-The platform consists of a custom CMS, an API, a React frontend and a React Native app (built for Android and iOS).
-
-My responsibilities includes the architecture, implementation, integration, running and scaling of the platform.
 
 \subsection*{Developer - Firmafon - 2013-2015}
 \keywords{Angular.js, Cordova, Ruby on Rails, Freeswitch, Puppet, RabbitMQ, Recruiting}
@@ -149,6 +140,22 @@ Responsible of implementation and operation of the product, and building the del
 \keywords{FreeBSD, Ruby on Rails, Capistrano, Unicorn, PostgreSQL, server architecture, creditcard payment, security}
 
 At Benjamin Media, besides implementing features on their applications, my responsibility was to make our applications scale in close coorporation with their hosting provider.
+
+\begin{itemize}
+  \item Analyzed our application, pinpointed and solved bottlenecks.
+  \item Did a major restructuring of our servers switching from Mongrel to Unicorn.
+  \item Implemented credit card payment on our subscription signups.
+\end{itemize}
+
+\subsection*{Developer - Gigahost ApS - 2008}
+
+\keywords{Linux, PHP, webudvikling, Apache, MySQL, serveradministration, selvstændigt, Mogile FS}
+
+\begin{itemize}
+  \item Configured the distributed file system Mogile FS.
+  \item Implemented a domain renewal system for Gigahost customers to use to manage their domains.
+  \item Configured PowerDNS and an administration system around it.
+\end{itemize}
 
 \section*{Personal}
 Born december 12th, 1980.
